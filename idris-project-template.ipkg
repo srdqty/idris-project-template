@@ -20,8 +20,8 @@ pkgs = prelude, base
 
 
 {- ******** Executable ******** -}
-main = Main
-executable = "idris-project-template"
+-- main = Main
+-- executable = "idris-project-template"
 
 
 {- ******** Binding to C ******** -}
