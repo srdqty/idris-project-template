@@ -1,0 +1,10 @@
+*.swp
+*~
+*.ghc.environment.*
+.#*
+*.o
+*.ibc
+/dist
+idris-project-template
+idris-project-template_doc
+/result
