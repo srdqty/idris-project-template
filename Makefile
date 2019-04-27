@@ -41,9 +41,10 @@ update-nixpkgs:
 		--argstr rev $(NIXPKGS_REV)
 
 .PHONY: change-project-name
-change-project-name: clean
+change-project-name:
 	find . -type f -not -path './.git/*' -not -name '*.swp' \
 		| xargs -r sed -i -e "s/idris-project-template/$(PROJECT_NAME)/g"
+	mv idris-project-template.ipkg $(PROJECT_NAME).ipkg
 
 .PHONY: clean
 clean:
